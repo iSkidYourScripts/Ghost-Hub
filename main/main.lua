@@ -249,4 +249,3 @@ if game.PlaceId == 7991339063 then -- RAINBOW FRIENDS LOADER [KEYLESS]
     end
   end)
     end
-end
