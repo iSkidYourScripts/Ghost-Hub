@@ -2,17 +2,10 @@
 [Official YouTube Channel](https://www.youtube.com/@ghosthubrbx)
 [Community Discord Server](https://discord.gg/89jkjqnVWK)
 
-## 💉 Examples
-**Copy** the scripts and paste them into your executor!
-
-Prision Life:
+## 💉 Script
+**Copy** the script and paste them into your executor!
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iSkidYourScripts/Ghost-Hub/main/main/prisionlife.lua",true))()
-```
-
-Rainbow Friends:
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iSkidYourScripts/Ghost-Hub/main/main/rainbowfriends.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iSkidYourScripts/Ghost-Hub/main/main.lua",true))()
 ```
 
 ![Ghost Hub - Rainbow Friends](https://user-images.githubusercontent.com/121834227/210286304-4a328aa6-e504-445e-ae09-d9c01e7c7f8c.PNG)
