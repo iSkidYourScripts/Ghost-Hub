@@ -7,9 +7,11 @@
 -- Please wait..
 ```
 
-!(Ghost Hub - Prision Life)[https://cdn.discordapp.com/attachments/1033425823035822234/1059621891993767997/image.png]
-<br>
-!(Ghost Hub - Rainbow Friends)[https://cdn.discordapp.com/attachments/1033425823035822234/1059623641752547368/image.png]
+![Ghost Hub - Rainbow Friends](https://user-images.githubusercontent.com/121834227/210286304-4a328aa6-e504-445e-ae09-d9c01e7c7f8c.PNG)
+
+![Ghost Hub - Prision Life](https://user-images.githubusercontent.com/121834227/210286324-2dc32611-6bcc-4a32-bd6b-0505127609d9.png)
+
+
 
 ## 🤓 Skidding Policy
 **Dear skids,** i'll allow you to skid my code, <br>
