@@ -4,8 +4,8 @@
 
 ## 💉 Ghost Hub
 **Copy** the script below and paste it in your executor!
-```
--- Please wait..
+```lua
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/iSkidYourScripts/Ghost-Hub/main/main/main.lua"), true))()
 ```
 
 ![Ghost Hub - Rainbow Friends](https://user-images.githubusercontent.com/121834227/210286304-4a328aa6-e504-445e-ae09-d9c01e7c7f8c.PNG)
