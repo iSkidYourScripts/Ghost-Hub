@@ -1,0 +1,117 @@
+-- StoneNicolas93#0001
+-------------------------------------------------------------------------
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/laderite/bleklib/main/library.lua"))()
+local win = library:Create({
+    Name = "👻 | Carl's Slap Battles",
+    StartupSound = {
+        Toggle = true,
+        SoundID = "rbxassetid://6958727243",
+        TimePosition = 1
+    }
+})
+local main = win:Tab('Main')
+local character = win:Tab('Character')
+local server = win:Tab('Serverside')
+server:Label("ENABLE ADMIN PANEL OPTION TO USE THESE:")
+main:Button('Teleport to Lobby', function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(266.816742, 152.630081, 502.723633, -0.0323764086, -1.6529178e-09, 0.999475718, -2.70795719e-09, 1, 1.56606483e-09, -0.999475718, -2.655834e-09, -0.0323764086)
+end)
+main:Toggle('Admin Panel', function(v)
+    if v then
+        workspace.AdminPanel.AdminPanelGui.Parent = game.Players.LocalPlayer.PlayerGui
+        game.Players.LocalPlayer.PlayerGui.AdminPanelGui.ResetOnSpawn = false
+    else
+        game.Players.LocalPlayer.PlayerGui.AdminPanelGui.Parent = workspace.AdminPanel
+    end
+end)
+
+main:Button('Negative Slaps', function()
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("Carl")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("RainbowUnicorns539")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("ANoahCode")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("1KVisits")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("2KVisits")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer(":D")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("Hack909909")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("IDontKnowWhatToPutHere")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("ItsNotARipOffItsAFanGame")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("Slap100")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("E")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("ACode")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("NPC.")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer(".")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("THXCARL!")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("PleaseForgiveMeCarl!!")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("WhatsABanHammer?YouMeanKickHammer?")
+    game:GetService("ReplicatedStorage").codeEvent:FireServer("10KVISITS!")
+end)
+main:Toggle('Sound Spammer', function(v)
+    workspace.ExplosionSound.Volume = 9 
+    while true do
+        wait(0.3)
+        if v then
+            workspace.ExplosionSound:Play()
+        else
+            workspace.ExplosionSound:Stop()
+        end
+    end
+end)
+
+server:Textbox('Target Username', function(v)
+    getgenv().target = v
+end)
+server:Button("Kick Player", function(v)
+    local args = {
+        [1] = {
+            [1] = getgenv().target;
+            [2] = "Kicked by an admin!"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.PlayerGui.AdminPanelGui.Events.KickFunction:InvokeServer(unpack(args))
+
+end)
+
+server:Button("Ban Player", function(v)
+    local args = {
+        [1] = {
+            [1] = getgenv().target;
+            [2] = "Banned by an admin!"
+        }
+    }
+    
+    game:GetService("Players").LocalPlayer.PlayerGui.AdminPanelGui.Events.BanFunction:InvokeServer(unpack(args))
+
+end)
+
+server:Button("Kill Player", function(v)
+    local args = {
+        [1] = getgenv().target
+    }
+    
+    game:GetService("Players").LocalPlayer.PlayerGui.AdminPanelGui.Events.KillFunction:InvokeServer(unpack(args))
+
+end)
+server:Button('Unban Player', function()
+    local args = {
+        [1] = getgenv().target
+    }
+    
+    game:GetService("Players").LocalPlayer.PlayerGui.AdminPanelGui.Events.UnbanFunction:FireServer(unpack(args))
+
+end)
+server:Button('Shutdown', function()
+    local args = {
+        [1] = "The server has reset"
+    }
+    
+    game:GetService("Players").LocalPlayer.PlayerGui.AdminPanelGui.Events.ShutdownEvent:FireServer(unpack(args))
+
+end)
+
+character:Slider('WalkSpeed', 16, 16, 100, function(a)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+end)
+character:Slider('JumpPower', 50, 50, 200, function(a)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+end)
